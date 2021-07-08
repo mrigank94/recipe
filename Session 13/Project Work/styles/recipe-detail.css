@@ -6,3 +6,7 @@
 .content {
     padding: 0 15px;
 }
+
+.recipe-ingredient {
+    text-transform: capitalize;
+}

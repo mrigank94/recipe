@@ -68,10 +68,11 @@ body {
 .footer {
     border-top: 1px solid #ccc;
     width: 100%;
-    background-color: #eee;
+    background-color: #FFA500;
     display: flex;
     justify-content: space-between;
     /* height: 50px; */
+    color: #eee;
 }
 
 .address {
@@ -112,7 +113,7 @@ body {
 }
 
 .up-arrow-container {
-    background-color: #ccc;
+    background-color: #93827F;
     width: 80px;
     margin-left: 10px;
 }
@@ -145,8 +146,19 @@ body {
     width: 400px;
 }
 
+#login {
+    width: 270px !important;
+    box-sizing: border-box !important;
+    font-size: 1rem !important;
+}
+
 #login input {
-    height: 25px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    font-size: .83rem !important;
 }
 
 #loginButton, #submitBtn {
@@ -165,24 +177,53 @@ body {
 }
 
 .close {
-    border-radius: 60%;
     top: 0;
     position: absolute;
-    right: -100px;
-    background-color: #fff;
+    right: 0;
     padding: 20px;
-    box-shadow: 1px 1px 1px #ccc;
     cursor: pointer;
+    color: #000 !important;
+    opacity: .7 !important;
+    font-size: 1rem !important;
 }
 
 .contact-form input {
     margin-bottom: 10%;
+    height: 25px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
+    font-size: .83rem !important;
+}
+
+.contact-form label {
+    margin: 0;
+}
+
+.contact-form input[type="radio"], .contact-form input[type="checkbox"] {
+    height: initial !important;
+}
+
+.contact-form input[type="submit"] {
+    margin-left: 25%;
+}
+
+#contactus h4, #login h4 {
+    font-size: 1rem !important;
+    margin: 1.33rem 0 !important;
+}
+
+.contact-form textarea {
+    margin-bottom: 10%;
+    height: 50px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"], 
 .contact-form textarea, .contact-form input[type="number"],
 .contact-form input[type="date"] {
     width: 100%;
+    border: 1px solid #ddd !important;
 }
 
 #error-msg {

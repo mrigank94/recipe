@@ -19,19 +19,13 @@
             <h3>Recipes</h3>
             <label for="categories">Choose a category:</label>
             <select name="categories" id="categories">
+                <option value="All">All</option>
                 <option value="italian">Italian</option>
-                <option value="chinese">Chinese</option>
-                <option value="continental">Continental</option>
-                <option value="dessert">Dessert</option>
+                <option value="indian">Indian</option>
+                <option value="american">American</option>
+                <option value="tunisian">Tunisian</option>
             </select>
             <div class="recipe-titles-container">
-                <a href="recipe-detail.html" class="recipe-title">
-                    <div >
-                        Recipe 1
-                    </div>
-                </a>
-                <div class="recipe-title">Recipe 2</div>
-                <div class="recipe-title">Recipe 3</div>
             </div>
         </div>
     </div>
@@ -40,7 +34,9 @@
 
     <div class="login-modal modal" id="login-modal"></div>
     <div class="contactus-modal modal" id="contactus-modal"></div>
-
+    <div class="error-msg modal" id="error-msg">Invalid Credentials!</div>
     <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+    
 </body>
 </html>

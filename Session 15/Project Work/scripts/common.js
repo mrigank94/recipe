@@ -3,7 +3,6 @@ contactTemplate();
 loginTemplate();
 footerTemplate();
 
-let loginNavbar = document.getElementById("login-navbar");
 let user = document.getElementById("user");
 
 if(sessionStorage.isLogin) {
@@ -12,7 +11,6 @@ if(sessionStorage.isLogin) {
     username.innerHTML = sessionStorage.username.toUpperCase();
     user.style.display = "flex";
 } else {
-    loginNavbar.style.display = "flex";
     user.style.display = "none";
 }
 

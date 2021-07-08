@@ -17,3 +17,14 @@
 .content {
     padding: 0 15px;
 }
+
+.card-text {
+    overflow-x: scroll;
+    height: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 995px) {
+    .card-text {
+        height: 20px;
+    }
+}
