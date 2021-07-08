@@ -27,7 +27,7 @@ function addToHome(data) {
              style="background-image: url(${data.strMealThumb})"
              onclick="goToRecipe(this)" 
              data-category=${data.strArea}
-             recipe-name=${data.strMeal}>
+             recipe-name=${encodeURI(data.strMeal)}>
              <div class="recipe-text-container">
                 <span class="recipe-title-text">${data.strMeal}</span>
              </div>
@@ -39,7 +39,8 @@ function addToHome(data) {
 
 function goToRecipe(recipe) {
     let recipeName = recipe.getAttribute("recipe-name");
-    window.location.href = `recipe-detail.html?recipe=${recipeName}`;
+    let str = `recipe-detail.html?recipe=${recipeName}`;
+    window.location.href = str;
 }
 
 document.getElementById('categories').addEventListener('change', selectCategory);

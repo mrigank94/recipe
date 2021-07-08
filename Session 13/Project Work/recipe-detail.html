@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <link href="styles/common.css" rel="stylesheet" />
     <link href="styles/recipe-detail.css" rel="stylesheet" />
@@ -10,19 +11,18 @@
 
     <div class="content">
         <div>
-            <!-- <video src="https://www.youtube.com/watch?v=lLRFDu6pCmw"></video> This is for the downloaded videos.-->
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/lLRFDu6pCmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <iframe class="recipe-video" src="https://www.youtube.com/embed/lLRFDu6pCmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height: 400px"></iframe>
+            <h2 id="recipe-title"></h2>
+            <iframe class="recipe-video" id="recipe-video" src="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                style="height: 400px"></iframe>
         </div>
         <div>
-            <h2>Chocolate Pudding Cake</h2>
-            <h3>Ingredients (Measurments):</h3>
-            <ol>
-                <li>Flour (95 grams)</li>
-                <li>Sugar (2 tbsp)</li>
-                <li>Cocoa Powder (1/4 cup)</li>
-                <li>Baking Powder (2 tbsp)</li>
-            </ol>
+            <h4>Ingredients (Measurments):</h4>
+            <ol id="recipe-ingredients"></ol>
+        </div>
+        <div>
+            <h4>Instructions</h4>
+            <div id="recipe-instructions"></div>
         </div>
     </div>
 
@@ -34,5 +34,7 @@
     <div class="contactus-modal modal" id="contactus-modal"></div>
 
     <script src="scripts/common.js"></script>
+    <script src="scripts/recipe-detail.js"></script>
 </body>
+
 </html>
